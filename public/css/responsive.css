@@ -1,0 +1,88 @@
+/* public/css/responsive.css */
+
+/* Medium screens (tablets) */
+@media (max-width: 992px) {
+  .post-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .site-title {
+    font-size: 2rem;
+  }
+
+  .section-title {
+    font-size: 1.8rem;
+  }
+
+  .single-post .post-title {
+    font-size: 2rem;
+  }
+}
+
+/* Small screens (mobile) */
+@media (max-width: 768px) {
+  .container {
+    width: 95%;
+    padding: 0 10px;
+  }
+
+  .main-nav ul {
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+
+  .post-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .single-post {
+    padding: 1.5rem;
+  }
+
+  .single-post .post-title {
+    font-size: 1.8rem;
+  }
+
+  .compose-section,
+  .about-section,
+  .contact-section {
+    padding: 1.5rem;
+  }
+}
+
+/* Very small screens */
+@media (max-width: 480px) {
+  .main-header {
+    padding: 1rem 0;
+  }
+
+  .site-title {
+    font-size: 1.7rem;
+    text-align: center;
+  }
+
+  .main-nav ul {
+    justify-content: center;
+  }
+
+  .main-nav a {
+    font-size: 0.8rem;
+  }
+
+  .section-title {
+    font-size: 1.5rem;
+  }
+
+  .post-card {
+    padding: 1rem;
+  }
+
+  .post-title {
+    font-size: 1.3rem;
+  }
+
+  .btn {
+    padding: 0.6rem 1.2rem;
+    font-size: 0.9rem;
+  }
+}

@@ -1,0 +1,36 @@
+<%- include('partials/header') %>
+
+<section class="compose-section">
+  <h2 class="section-title">Compose New Post</h2>
+
+  <form action="/compose" method="POST" class="compose-form">
+    <div class="form-group">
+      <label for="postTitle">Title</label>
+      <input
+        type="text"
+        id="postTitle"
+        name="postTitle"
+        required
+        class="form-control"
+      />
+    </div>
+
+    <div class="form-group">
+      <label for="postContent">Content</label>
+      <textarea
+        id="postContent"
+        name="postContent"
+        rows="10"
+        required
+        class="form-control"
+      ></textarea>
+      <p class="form-hint">
+        Tip: Leave a blank line between paragraphs for better formatting.
+      </p>
+    </div>
+
+    <button type="submit" class="btn btn-primary">Publish</button>
+  </form>
+</section>
+
+<%- include('partials/footer') %>

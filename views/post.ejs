@@ -1,0 +1,17 @@
+<!-- Alternative views/post.ejs -->
+<%- include('partials/header') %>
+
+<article class="single-post">
+  <h2 class="post-title"><%= post.title %></h2>
+  <p class="post-date"><%= post.date %></p>
+
+  <div class="post-content">
+    <% post.content.split('\n\n').forEach(function(paragraph) { %>
+    <p><%= paragraph %></p>
+    <% }); %>
+  </div>
+
+  <a href="/" class="back-btn">← Back to Home</a>
+</article>
+
+<%- include('partials/footer') %>

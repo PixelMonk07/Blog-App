@@ -1,0 +1,24 @@
+<%- include('partials/header') %>
+
+<section class="blog-posts">
+  <h2 class="section-title">Recent Posts</h2>
+
+  <% if (posts.length === 0) { %>
+  <p class="no-posts-message">
+    No posts yet. <a href="/compose">Create the first one!</a>
+  </p>
+  <% } else { %>
+  <div class="post-grid">
+    <% posts.forEach(function(post) { %>
+    <article class="post-card">
+      <h3 class="post-title"><%= post.title %></h3>
+      <p class="post-date"><%= post.date %></p>
+      <p class="post-snippet"><%= post.snippet %></p>
+      <a href="/posts/<%= post.id %>" class="read-more">Read More</a>
+    </article>
+    <% }); %>
+  </div>
+  <% } %>
+</section>
+
+<%- include('partials/footer') %>
