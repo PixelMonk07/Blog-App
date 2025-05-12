@@ -125,4 +125,4 @@ This project is licensed under the MIT License.
 
 ---
 
-<sub>Made with ❤️ by \[Your Name]</sub>
+<sub>Made with ❤️ by \NILOY PAL</sub>
