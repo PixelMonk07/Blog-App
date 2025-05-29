@@ -61,7 +61,7 @@ blog-app/
 1. **Clone the repo**
 
    ```bash
-   git clone https://github.com/your-username/blog-app.git
+   git clone https://github.com/PixelMonk07/Blog-App.git
    cd blog-app
    ```
 
